@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: xpfg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ccuw-tenant/byoc-app-tyaz/xpfg@sha256:59e3e027297c618cdbc57f584dca5912cda500f813a2be901910f8c69ac31287
+        name: my-java-quarkus
+        resources: {}
+status: {}
